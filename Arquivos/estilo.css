@@ -1,0 +1,467 @@
+﻿/* Os efeitos de links e botões estão ao fim da página */
+
+@font-face {
+        font-family: 'Aurebesh';
+        src: url('https://rodcordeiro.github.io/shares/fonts/Aurebesh/Aurebesh.eot');
+        src: url('https://rodcordeiro.github.io/shares/fonts/Aurebesh/Aurebesh.eot') format('embedded-opentype'),
+         url('https://rodcordeiro.github.io/shares/fonts/Aurebesh/Aurebesh.woff2') format('woff2'),
+         url('https://rodcordeiro.github.io/shares/fonts/Aurebesh/Aurebesh.woff') format('woff'),
+         url('https://rodcordeiro.github.io/shares/fonts/Aurebesh/Aurebesh.ttf') format('truetype'),
+         url('https://rodcordeiro.github.io/shares/fonts/Aurebesh/Aurebesh.svg#Aurebesh') format('svg');
+}
+        
+body{
+    background: #999;
+    margin: 0;
+}
+    
+#content {
+    background: #f7f7f7;
+    width: 80%;
+    margin: 2% 10%;
+    font-family: 'Abel', sans-serif;
+}
+
+#menu{
+    height: 200px;
+    float: right;
+    text-align: right;
+    padding: 13px;
+    font-size: 2rem;
+    background: #555;
+    color: #eee;    
+}
+
+#menu img {
+    width: 10%;
+    height: auto;
+    float: left;
+}
+
+#menu ul{
+    list-style: none;
+}
+
+#anuncio{
+    text-align: center;
+    width: 80%;
+    margin: 2% 10%;
+    margin-top: 6%;
+    padding: 3px;   
+    font-size: 1rem;
+}
+
+/*
+#escolha div, ul, li{
+    border: 1px solid black;
+}
+
+#escolha img{
+    width: 80%;
+    height: auto;
+    margin: 10%; 
+} */
+
+#escolha{
+    background-image: url('https://cdn-az.allevents.in/banners/434351a0441cea27748e881043a9f374');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: flexbox;
+padding: 13px;
+}
+
+#escolha ul{
+    list-style: none;
+    padding: 1px;
+}
+#escolha ul li{
+    background: rgba(97,97,97,0.8);
+    color: #fff;
+    border-radius: 5%;
+    width: 40%;
+    height: 450px;
+    display: inline-block;
+    margin-right: 2%;
+    text-align: center;
+    text-shadow: 2px 4px 6px #000;
+font-size: 30px;
+}
+footer{
+    background: #555;
+    color: #eee;    
+}
+footer span{
+    font-family: Aurebesh, "Aurebesh Condensed";
+    text-align: center;
+    margin-left: 45%;
+}
+
+
+#link{
+    border:none;
+    border-radius: 5px;
+    background: #333;
+    color: #333;
+    box-shadow: 2px 4px 6px #000;
+    min-width: 25%;
+    padding: 5px;
+}
+    
+.link{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    font-size: 2em;
+}
+
+#tradutor:target{
+    display: block;
+    height: 100%;
+}
+
+#learn {
+    text-align: center;
+}
+  
+#learn:target{
+    display: block;
+}
+
+.texto{
+            width: 85%;
+            margin: 2%;
+            padding: 3%;
+            background: #f2f2f2;
+            color: #000000;
+            font-family: 'Abel', sans-serif;
+            font-size: 2em;
+            border-radius: 5px;
+            box-shadow: 3px 5px 15px  #000;
+            text-shadow: 2px 2px 5px #aaa;
+            opacity: 0.8;
+            resize: vertical;
+            }
+        
+        .texto:hover{
+            opacity: 1;
+            background: #f4f4f4;
+        }
+        
+        .aurebesh{
+            width: 85%;
+            height: auto;
+            margin: 2%;
+            padding: 3%;
+            background: #f2f2f2;
+            color: #000000;
+            font-family: Aurebesh, "Aurebesh Condensed";
+            font-size: 1.5em;
+            border-radius: 5px;
+            box-shadow: 3px 5px 15px  #000;
+            text-shadow: 2px 2px 5px #aaa;
+            opacity: 0.8;
+            resize: vertical;
+            }
+        
+        .aurebesh:hover{
+            opacity: 1;
+            background: #f4f4f4;
+            
+        }
+        
+        
+
+
+/* EFEITOS */
+
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.cl-effect-1 a::before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.cl-effect-1 a::after {
+    margin-left: 10px;
+    content: ']';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+        /* BOTÃO TRADUZIR */
+        .btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 15px 40px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-3 {
+    background: #333;
+    color: #ccc;
+}
+
+.btn-3:hover {
+    background: #666;
+}
+
+.btn-3:active {
+    background: #000;
+    top: 2px;
+}
+
+.btn-3:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+}
+.btn-3e {
+    padding: 20px 120px 25px 60px;
+    overflow: hidden;
+}
+
+.btn-3e:before {
+    left: auto;
+    right: 10px;
+    z-index: 2;
+}
+
+.btn-3e:after {
+    width: 30%;
+    height: 200%;
+    background: rgba(255,255,255,0.1);
+    z-index: 1;
+    right: 0;
+    top: 0;
+    margin: -5px 0 0 -5px;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform-origin: 0 0;
+    -moz-transform: rotate(-20deg);
+    -ms-transform-origin: 0 0;
+    -ms-transform: rotate(-20deg);
+    transform-origin: 0 0;
+    transform: rotate(-20deg);
+}
+
+.btn-3e:hover:after {
+    width: 40%;
+}
+
+
+.box {
+    border: 1px solid #ccf;
+    border-radius: 2px;
+    font-family: Roboto, sans-serif;
+    font-size: 2em;
+    line-height: 2;
+    height: 2em;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    width: 300px;
+}
+
+.box span {
+    color: #336;
+    display: inline-block;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-transition: -webkit-transform 0.6s ease-out 0.1s;
+    transition: -webkit-transform 0.6s ease-out 0.1s;
+    -o-transition: transform 0.6s ease-out 0.1s;
+    transition: transform 0.6s ease-out 0.1s;
+    transition: transform 0.6s ease-out 0.1s, -webkit-transform 0.6s ease-out 0.1s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.box span:nth-child(odd) {
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+}
+
+.box span:nth-child(even) {
+    -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+            transform: translateY(100%);
+}
+
+.box span::before {
+    color: #227;
+    content: attr(data-text);
+    position: absolute;
+}
+
+.box span:nth-child(odd)::before {
+    -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+            transform: translateY(100%);
+}
+
+.box span:nth-child(even)::before {
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+}
+
+.box:hover span {
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+}
+
+.hide{
+    display:none;
+}
+
+
+@media screen and (max-width: 768px){
+#menu{
+    font-size: 1.5rem;
+}
+#menu img {
+    width: 20%;
+}
+            /* BOTÃO TRADUZIR */
+        .btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 5px 20px;
+    display: inline-block;
+    margin: 5px 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-3 {
+    background: #333;
+    color: #ccc;
+}
+
+.btn-3:hover {
+    background: #666;
+}
+
+.btn-3:active {
+    background: #000;
+    top: 2px;
+}
+
+.btn-3:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 40px;
+}
+.btn-3e {
+    padding:13px 60px 13px 13px;
+    overflow: hidden;
+}
+
+.btn-3e:before {
+    left: auto;
+    right: 10px;
+    z-index: 2;
+}
+
+.btn-3e:after {
+    width: 30%;
+    height: 200%;
+    background: rgba(255,255,255,0.1);
+    z-index: 1;
+    right: 0;
+    top: 0;
+    margin: -5px 0 0 -5px;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform-origin: 0 0;
+    -moz-transform: rotate(-20deg);
+    -ms-transform-origin: 0 0;
+    -ms-transform: rotate(-20deg);
+    transform-origin: 0 0;
+    transform: rotate(-20deg);
+}
+
+.btn-3e:hover:after {
+    width: 40%;
+}
+
+
+
+
+}
+}
