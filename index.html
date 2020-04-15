@@ -6,10 +6,10 @@
     <title>Aurebesh</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="home" href="C:\Users\rodrigo.cordeiro\Documents\DRIGO\HTML\Cordeiro's Universe\blog.html">
+    <link rel="home" href="https://rodcordeiro.github.io/Aurebesh-Translator/">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="Arquivos\fav_ImperioSith/ms-icon-310x310.png">
-    <meta property="og:site_name" content="MDN Web Docs">
+    <meta property="og:image" content="Arquivos/fav_ImperioSith/favicon.ico">
+    <meta property="og:site_name" content="Aurebesh Translator">
 
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     
@@ -61,213 +61,20 @@
         <source src="Arquivos/Marcha.mp3" type="audio/mpeg">
         <source src="Arquivos/Marcha.wav" type="audio/wav">
     </audio>
-   <textarea class="texto" placeholder="Write here..." id="txt" onkeypress="wait()" onchange="morse()"></textarea>
-   <button class="btn btn-3 btn-3e" onClick="show()">Traduzir</button>
+   <textarea class="texto" placeholder="Write here..." id="txt" ></textarea>
+   <button class="btn btn-3 btn-3e" onClick="aurebesh()">Traduzir</button>
    <textarea class="aurebesh hide" placeholder="Siths WIN!" id="out"></textarea>
 </div>
 
    
     <script>
-      function show(){
-          document.getElementById("out").classList.remove("hide");
-      }
-          function morse(){
-            var text = document.getElementById("txt").value.toLowerCase();
-            var mors = "";
-            
-            for (var i = 0;i < 1000; i++){
-                var b = text.substring(i,i+1);
-                
-                //alfabeto 
-                if(b == "a"){
-                    mors += "a";
-                }
-                if(b == "b"){
-                    mors += "b";
-                }
-                if(b == "c"){
-                    mors += "c";
-                }
-                if(b == "d"){
-                    mors += "d";
-                }
-                if(b == "e"){
-                    mors += "e";
-                }
-                if(b == "f"){
-                    mors += "f";
-                }
-                if(b == "g"){
-                    mors += "g";
-                }
-                if(b == "h"){
-                    mors += "h";
-                }
-                if(b == "i"){
-                    mors += "i";
-                }
-                if(b == "j"){
-                    mors += "j";
-                }
-                if(b == "k"){
-                    mors += "k";
-                }
-                if(b == "l"){
-                    mors += "l";
-                }
-                if(b == "m"){
-                    mors += "m";
-                }
-                if(b == "n"){
-                    mors += "n";
-                }
-                if(b == "o"){
-                    mors += "o";
-                }
-                if(b == "p"){
-                    mors += "p";
-                }
-                if(b == "q"){
-                    mors += "q";
-                }
-                if(b == "r"){
-                    mors += "r";
-                }
-                if(b == "s"){
-                    mors += "s";
-                }
-                if(b == "t"){
-                    mors += "t";
-                }
-                if(b == "u"){
-                    mors += "u";
-                }
-                if(b == "v"){
-                    mors += "v";
-                }
-                if(b == "w"){
-                    mors += "w";
-                }if(b == "x"){
-                    mors += "x";
-                }
-                if(b == "y"){
-                    mors += "y";
-                }
-                if(b == "z"){
-                    mors += "z";
-                }
-                
-                //numeros
-                if(b == "0"){
-                    mors += "0";
-                }
-                if(b == "1"){
-                    mors += "1";
-                }
-                if(b == "2"){
-                    mors += "2";
-                }
-                if(b == "3"){
-                    mors += "3";
-                }
-                if(b == "4"){
-                    mors += "4";
-                }
-                if(b == "5"){
-                    mors += "5";
-                }
-                if(b == "6"){
-                    mors += "6";
-                }
-                if(b == "7"){
-                    mors += "7";
-                }
-                if(b == "8"){
-                    mors += "8";
-                }
-                if(b == "9"){
-                    mors += "9";
-                }
-                
-                // pontos
-                
-                if(b == " "){
-                    mors += " ";
-                }
-                
-                
-                if(b === ""){
-                    mors += "";
-                }
-                if(b === ":"){
-                    mors += ":";
-                }
-                
-                if(b === "?"){
-                    mors += "?";
-                }
-                
-                if(b === "!"){
-                    mors += "!";
-                }
-                
-                if(b === "."){
-                    mors += ".";
-                }
-                if(b === "/"){
-                    mors += "/";
-                }
-                
-                if(b === ","){
-                    mors += ",";
-                }
-                if(b === "@"){
-                    mors += "@";
-                }
-                if(b === "#"){
-                    mors += "#";
-                }
-                if(b === "$"){
-                    mors += "$";
-                }
-                if(b === "%"){
-                    mors += "%";
-                }
-                if(b === "&"){
-                    mors += "&";
-                }
-                if(b === "*"){
-                    mors += "*";
-                }
-                if(b === "("){
-                    mors += "(";
-                }
-                if(b === ")"){
-                    mors += ")";
-                }
-                if(b === "="){
-                    mors += "=";
-                }
-                if(b === "+"){
-                    mors += "+";
-                }
-                if(b === "["){
-                    mors += "[";
-                }
-                if(b === "]"){
-                    mors += "]";
-                }
-                if(b === "{"){
-                    mors += "{";
-                }
-                if(b === "}"){
-                    mors += "}";
-                }
-                
-                
-            } 
-            
-            document.getElementById("out").innerHTML = mors;
+        function show(){
+            document.getElementById("out").classList.remove("hide");
+        }
+        function aurebesh(){
+            var text = document.getElementById("txt").value;
+            document.getElementById("out").innerHTML = text;
+            show()
         }
     </script>
 </div>
