@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'Aurebesh';
+    src: url('https://rodcordeiro.github.io/shares/fonts/Aurebesh/Aurebesh.eot');
+    src: url('https://rodcordeiro.github.io/shares/fonts/Aurebesh/Aurebesh.eot') format('embedded-opentype'),
+     url('https://rodcordeiro.github.io/shares/fonts/Aurebesh/Aurebesh.woff2') format('woff2'),
+     url('https://rodcordeiro.github.io/shares/fonts/Aurebesh/Aurebesh.woff') format('woff'),
+     url('https://rodcordeiro.github.io/shares/fonts/Aurebesh/Aurebesh.ttf') format('truetype'),
+     url('https://rodcordeiro.github.io/shares/fonts/Aurebesh/Aurebesh.svg#Aurebesh') format('svg');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Abel', sans-serif;
+}
+body{
+    background-color: #999999;
+}
+.container{
+    display: flex;
+    min-height: 80vh;
+    width: 80%;
+    flex-direction: column;
+    margin: 5% auto;
+    
+}
+
+header{
+    display: flex;
+    height: 10%;
+    background-color: #555;
+    padding: 10px 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header img{
+    height: 100px;
+    margin: 20px;
+}
+
+header span{
+    
+    font-size: 26pt;
+    color: white;
+}
+.content{
+    background-color: #f4f4f4;
+    padding: 15px;
+}
+.content h1{
+    text-align: center;
+    margin: 15px auto;
+}
+.content p{
+    font-size: 14pt;
+    margin-bottom: 30px;
+}
+.hide{
+    display: none;
+}
+/* BOTÃO TRADUZIR */
+.btn {
+border: none;
+font-family: inherit;
+font-size: inherit;
+color: inherit;
+background: none;
+cursor: pointer;
+padding: 15px 40px;
+display: inline-block;
+margin: 15px 30px;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-weight: 700;
+outline: none;
+position: relative;
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+transition: all 0.3s;
+}
+
+.btn:after {
+content: '';
+position: absolute;
+z-index: -1;
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+transition: all 0.3s;
+}
+
+.btn-3 {
+background: #333;
+color: #ccc;
+}
+
+.btn-3:hover {
+background: #666;
+}
+
+.btn-3:active {
+background: #000;
+top: 2px;
+}
+
+.btn-3:before {
+position: absolute;
+height: 100%;
+left: 0;
+top: 0;
+line-height: 3;
+font-size: 140%;
+width: 60px;
+}
+.btn-3e {
+padding: 20px 120px 25px 60px;
+overflow: hidden;
+}
+
+.btn-3e:before {
+left: auto;
+right: 10px;
+z-index: 2;
+}
+
+.btn-3e:after {
+width: 30%;
+height: 200%;
+background: rgba(255,255,255,0.1);
+z-index: 1;
+right: 0;
+top: 0;
+margin: -5px 0 0 -5px;
+-webkit-transform-origin: 0 0;
+-webkit-transform: rotate(-20deg);
+-moz-transform-origin: 0 0;
+-moz-transform: rotate(-20deg);
+-ms-transform-origin: 0 0;
+-ms-transform: rotate(-20deg);
+transform-origin: 0 0;
+transform: rotate(-20deg);
+}
+
+.btn-3e:hover:after {
+width: 40%;
+}
+
+textarea{
+    width: 85%;
+    padding: 3%;
+    background: #f2f2f2;
+    color: #000000;
+    font-family: 'Abel', sans-serif;
+    font-size: 2em;
+    border-radius: 5px;
+    box-shadow: 3px 5px 15px  #000;
+    text-shadow: 2px 2px 5px #aaa;
+    opacity: 0.8;
+    resize: vertical;
+    }
+
+textarea:hover{
+    opacity: 1;
+    background: #f4f4f4;
+}
+.aurebesh {
+    font-family: Aurebesh, "Aurebesh Condensed";
+    font-size: 1.5em;
+            
+}
+footer{
+    padding: 5px;
+    font-size: 14pt;
+    color: #f4f4f4;
+    background-color: #555;
+    text-align: center;
+    
+}
+@media  screen and (max-width: 768px) {
+    .container{
+        margin: 0;
+        width: 100%;
+        min-height: 100vh;
+    }
+    footer{
+        font-size: 12pt;
+    }
+}

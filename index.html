@@ -1,19 +1,20 @@
-﻿<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Aurebesh</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aurebesh Translator</title>
 
     <link rel="home" href="https://rodcordeiro.github.io/Aurebesh-Translator/">
+    
     <meta property="og:type" content="website">
     <meta property="og:image" content="Arquivos/fav_ImperioSith/favicon.ico">
     <meta property="og:site_name" content="Aurebesh Translator">
 
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     
-    <link rel="stylesheet" type="text/css" href="Arquivos/estilo.css">
+    <link rel="stylesheet" type="text/css" href="Arquivos/style.css">
     
     <link rel="apple-touch-icon" sizes="57x57" href="Arquivos/fav_ImperioSith/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="Arquivos/fav_ImperioSith/apple-icon-60x60.png">
@@ -33,40 +34,33 @@
     <meta name="msapplication-TileImage" content="Arquivos/fav_ImperioSith/ms-icon-144x144.png">
     <meta name="theme-color" content="#777">
     <link rel="shortcut icon" href="Arquivos/fav_ImperioSith/apple-icon.png">
-
 </head>
 <body>
-    
-    <div id="content">
-       <nav id="menu">
-          <ul>
-            <img alt="Império" src="Arquivos/SithEmblemTOR.png">
-            <li>Cordeiro's DEV.</li>
-        </ul>
-    </nav>
-    <div id="anuncio">
-        <h2>Bem vindo!!</h2></br>
-        <p>
-            Esta página foi desenvolvida para disseminar o conhecimento sobre <strong>Aurebesh</strong>, o alfabeto desenvolvido no universo Star Wars para a lingua Intergaláctica, uma segunda língua mãe para quase todos os planetas.
-            <a href="https://starwars.fandom.com/pt/wiki/Legends:Aurebesh" target="_blank">Veja mais na Fandom Star Wars</a>
-        </p>
-    </div>        
-
-
-<!-- SEÇÕES -->
-<!-- tradutor -->
-<div id="tradutor">
     <audio autoplay>
         <source src="Arquivos/Marcha.ogg" type="audio/ogg">
         <source src="Arquivos/Marcha.mp3" type="audio/mpeg">
         <source src="Arquivos/Marcha.wav" type="audio/wav">
     </audio>
-   <textarea class="texto" placeholder="Write here..." id="txt" ></textarea>
-   <button class="btn btn-3 btn-3e" onClick="aurebesh()">Traduzir</button>
-   <textarea class="aurebesh hide" placeholder="Siths WIN!" id="out"></textarea>
-</div>
-
+    <div class="container">
+        <header>
+            <img src="Arquivos/SithEmblemTOR.png" alt="Sith emblem">
+            <span>Cordeiro's DEV</span>
+        </header>
+        <div class="content">
+            <h1>Bem vindo ao meu transcitor de Aurebesh</h1>
+            <p>
+                Esta página foi desenvolvida para disseminar o conhecimento sobre <strong>Aurebesh</strong>, o alfabeto desenvolvido no universo Star Wars para a lingua Intergaláctica, uma segunda língua mãe para quase todos os planetas.
+                <a href="https://starwars.fandom.com/pt/wiki/Legends:Aurebesh" target="_blank">Veja mais na Fandom Star Wars</a>
+            </p>
    
+            <textarea placeholder="Write here..." id="txt" ></textarea>
+            <button class="btn btn-3 btn-3e" onClick="aurebesh()">Traduzir</button>
+            <textarea class="aurebesh hide" placeholder="Siths WIN!" id="out"></textarea>
+        </div>
+        <footer>
+            Code with &lt;3 by Cordeiro
+        </footer>
+    </div>
     <script>
         function show(){
             document.getElementById("out").classList.remove("hide");
@@ -77,9 +71,5 @@
             show()
         }
     </script>
-</div>
-<footer>
-    <span>Sith Empire</span>&#174
-</footer>
 </body>
 </html>
