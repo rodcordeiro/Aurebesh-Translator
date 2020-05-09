@@ -56,7 +56,9 @@ header span{
 }
 .content p{
     font-size: 14pt;
-    margin-bottom: 30px;
+    width: 90%;
+    text-align: justify;
+    margin: 0 auto 30px auto;
 }
 .hide{
     display: none;
