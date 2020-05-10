@@ -98,11 +98,61 @@
         </footer>
     </div>
     <script>
+        const replacements = {
+                "á":"a",
+                "à":"a",
+                "ã":"a",
+                "â":"a",
+                "é":"e",
+                "ê":"e",
+                "ẽ":"e",
+                "è":"e",
+                "í":"i",
+                "ì":"i",
+                "ĩ":"i",
+                "î":"i",
+                "ó":"o",
+                "ò":"o",
+                "õ":"o",
+                "ô":"o",
+                "ú":"u",
+                "ù":"u",
+                "ũ":"u",
+                "û":"u",
+                "Á":"A",
+                "À":"A",
+                "Ã":"A",
+                "Â":"A",
+                "É":"E",
+                "È":"E",
+                "Ẽ":"E",
+                "Ê":"E",
+                "Í":"I",
+                "Ì":"I",
+                "Ĩ":"I",
+                "Î":"I",
+                "Ó":"O",
+                "Ò":"O",
+                "Õ":"O",
+                "Ô":"O",
+                "Ú":"U",
+                "Ù":"U",
+                "Ũ":"U",
+                "Û":"U",
+                "ç":"c",
+                "Ç":"C"
+            }
         function show(){
             document.getElementById("out").classList.remove("hide");
         }
+        function replaceAccents(letter){
+            if(replacements[letter]) return (replacements[letter]);
+            return letter;
+
+        }
         function aurebesh(){
             var text = document.getElementById("txt").value;
+            // text.forEach(letter => replaceAccents(letter))
             document.getElementById("out").innerHTML = text;
             show()
         }
